@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>server</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5C%D0%B2%D1%88%D1%8D%5Cpythonproject%5Cserver.py">d:\вшэ\pythonproject\server.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-get_messages"><strong>get_messages</strong></a>()</dt><dd><tt>Функция,&nbsp;позволяющая&nbsp;получить&nbsp;все&nbsp;сообщения&nbsp;из&nbsp;базы&nbsp;данных&nbsp;начиная&nbsp;с&nbsp;какого-либо&nbsp;промежутка&nbsp;времени.<br>
+С&nbsp;помощью&nbsp;объекта&nbsp;request&nbsp;получает&nbsp;параметры,&nbsp;которые&nbsp;передаются&nbsp;в&nbsp;get-запросе.<br>
+Параметр&nbsp;after&nbsp;позволяет&nbsp;получать&nbsp;только&nbsp;новые&nbsp;сообщения&nbsp;(возвращаются&nbsp;только&nbsp;сообщения&nbsp;после&nbsp;after)</tt></dd></dl>
+ <dl><dt><a name="-hello_world"><strong>hello_world</strong></a>()</dt><dd><tt>Функция&nbsp;ничего&nbsp;не&nbsp;принимает,&nbsp;выводит&nbsp;приветствие&nbsp;на&nbsp;главной&nbsp;странице&nbsp;сервера.</tt></dd></dl>
+ <dl><dt><a name="-prediction"><strong>prediction</strong></a>(msg, name)</dt><dd><tt>Вместо&nbsp;обычного&nbsp;сообщения,&nbsp;возвращает&nbsp;сообщение&nbsp;с&nbsp;предсказанием.<br>
+В&nbsp;переменной&nbsp;answer&nbsp;находятся&nbsp;несколько&nbsp;предсказаний,&nbsp;одно&nbsp;из&nbsp;которых&nbsp;рандомным&nbsp;образом&nbsp;прибавляется&nbsp;к&nbsp;исходному&nbsp;сообщению.<br>
+&nbsp;<br>
+:param&nbsp;msg:&nbsp;полученное&nbsp;сообщение<br>
+:param&nbsp;name:&nbsp;имя&nbsp;отправителя<br>
+:return:&nbsp;возвращает&nbsp;новое&nbsp;сообщение</tt></dd></dl>
+ <dl><dt><a name="-send_message"><strong>send_message</strong></a>()</dt><dd><tt>Функция,&nbsp;необходимая&nbsp;для&nbsp;того,&nbsp;чтобы&nbsp;отправить&nbsp;сообщение&nbsp;от&nbsp;какого-либо&nbsp;человека.<br>
+Все&nbsp;необходимые&nbsp;данные&nbsp;получаются&nbsp;с&nbsp;помощью&nbsp;объекта&nbsp;request.</tt></dd></dl>
+ <dl><dt><a name="-show"><strong>show</strong></a>()</dt><dd><tt>Функция&nbsp;выводит&nbsp;базу&nbsp;данных&nbsp;сервера&nbsp;по&nbsp;эндпоинту&nbsp;/show<br>
+Так&nbsp;как&nbsp;json&nbsp;имеет&nbsp;тип&nbsp;dictionary,&nbsp;возвращаем&nbsp;базу&nbsp;данных&nbsp;как&nbsp;словарь&nbsp;по&nbsp;ключу&nbsp;'data'</tt></dd></dl>
+ <dl><dt><a name="-status"><strong>status</strong></a>()</dt><dd><tt>Функция&nbsp;показывает&nbsp;название&nbsp;мессенджера,&nbsp;количество&nbsp;активных&nbsp;пользователей&nbsp;и&nbsp;время&nbsp;на&nbsp;сервере&nbsp;по&nbsp;эндпоинту&nbsp;/status</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>app</strong> = &lt;Flask 'server'&gt;<br>
+<strong>db</strong> = []<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;</td></tr></table>
+</body></html>

@@ -1,0 +1,954 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module messenger</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>messenger</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5C%D0%B2%D1%88%D1%8D%5Cpythonproject%5Cmessenger.py">d:\вшэ\pythonproject\messenger.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="PyQt5.QtCore.html">PyQt5.QtCore</a><br>
+</td><td width="25%" valign=top><a href="PyQt5.QtWidgets.html">PyQt5.QtWidgets</a><br>
+</td><td width="25%" valign=top><a href="client.html">client</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>(<a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="messenger.html#MessengerApp">MessengerApp</a>(<a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>, <a href="client.html#Ui_MainWindow">client.Ui_MainWindow</a>)
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="client.html#Ui_MainWindow">client.Ui_MainWindow</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="messenger.html#MessengerApp">MessengerApp</a>(<a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>, <a href="client.html#Ui_MainWindow">client.Ui_MainWindow</a>)
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MessengerApp">class <strong>MessengerApp</strong></a>(<a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>, <a href="client.html#Ui_MainWindow">client.Ui_MainWindow</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#MessengerApp">MessengerApp</a>(host='<a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a>')<br>
+&nbsp;<br>
+Класс&nbsp;<a href="#MessengerApp">MessengerApp</a>&nbsp;используется&nbsp;для&nbsp;описания&nbsp;мессенждера.<br>
+&nbsp;<br>
+Objects<br>
+_______<br>
+QtWidgets.<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Объект&nbsp;<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>&nbsp;из&nbsp;библиотеки&nbsp;QtWidgets<br>
+client.<a href="client.html#Ui_MainWindow">Ui_MainWindow</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Класс&nbsp;<a href="client.html#Ui_MainWindow">Ui_MainWindow</a>&nbsp;из&nbsp;файла&nbsp;client.py<br>
+&nbsp;<br>
+Attributes<br>
+__________<br>
+host&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;локал-хост&nbsp;компьютера,&nbsp;на&nbsp;котором&nbsp;находится&nbsp;сервер<br>
+&nbsp;<br>
+Methods<br>
+__________<br>
+<a href="#MessengerApp-send_message">send_message</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Отправляет&nbsp;сообщения.<br>
+<a href="#MessengerApp-get_messages">get_messages</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Выводит&nbsp;сообщения&nbsp;на&nbsp;экран.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="messenger.html#MessengerApp">MessengerApp</a></dd>
+<dd><a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a></dd>
+<dd><a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a></dd>
+<dd><a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a></dd>
+<dd><a href="PyQt5.sip.html#wrapper">sip.wrapper</a></dd>
+<dd><a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a></dd>
+<dd><a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a></dd>
+<dd><a href="client.html#Ui_MainWindow">client.Ui_MainWindow</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MessengerApp-__init__"><strong>__init__</strong></a>(self, host='http://127.0.0.1:5000')</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-get_messages"><strong>get_messages</strong></a>(self)</dt><dd><tt>Метод&nbsp;добавляет&nbsp;все&nbsp;сообщения&nbsp;из&nbsp;базы&nbsp;в&nbsp;текстовое&nbsp;поле.<br>
+Отправляет&nbsp;get-запрос&nbsp;на&nbsp;сервер&nbsp;по&nbsp;эндпоинту&nbsp;/receive.<br>
+&nbsp;<br>
+________<br>
+Exeption<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Обработка&nbsp;исключения&nbsp;при&nbsp;отключении&nbsp;сервера.</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-send_message"><strong>send_message</strong></a>(self)</dt><dd><tt>Метод&nbsp;для&nbsp;отправки&nbsp;сообщения&nbsp;каждый&nbsp;раз,&nbsp;когда&nbsp;нажимается&nbsp;кнопка&nbsp;"Отправить".<br>
+Считывает&nbsp;имя&nbsp;и&nbsp;сообщения&nbsp;из&nbsp;ячеек&nbsp;в&nbsp;окне&nbsp;приложения,&nbsp;отправляет&nbsp;post-запрос&nbsp;на&nbsp;сервер&nbsp;по&nbsp;эндпоинту&nbsp;/send<br>
+&nbsp;<br>
+________<br>
+Exeption<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Обработка&nbsp;исключения&nbsp;при&nbsp;отключении&nbsp;сервера.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>:<br>
+<dl><dt><a name="MessengerApp-actionEvent"><strong>actionEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-addDockWidget"><strong>addDockWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-addDockWidget">addDockWidget</a>(self,&nbsp;Qt.DockWidgetArea,&nbsp;QDockWidget)<br>
+<a href="#MessengerApp-addDockWidget">addDockWidget</a>(self,&nbsp;Qt.DockWidgetArea,&nbsp;QDockWidget,&nbsp;Qt.Orientation)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-addToolBar"><strong>addToolBar</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-addToolBar">addToolBar</a>(self,&nbsp;Qt.ToolBarArea,&nbsp;QToolBar)<br>
+<a href="#MessengerApp-addToolBar">addToolBar</a>(self,&nbsp;QToolBar)<br>
+<a href="#MessengerApp-addToolBar">addToolBar</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;QToolBar</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-addToolBarBreak"><strong>addToolBarBreak</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-addToolBarBreak">addToolBarBreak</a>(self,&nbsp;area:&nbsp;Qt.ToolBarArea&nbsp;=&nbsp;Qt.TopToolBarArea)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-centralWidget"><strong>centralWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-centralWidget">centralWidget</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-changeEvent"><strong>changeEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-childEvent"><strong>childEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-closeEvent"><strong>closeEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-connectNotify"><strong>connectNotify</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-contextMenuEvent"><strong>contextMenuEvent</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-contextMenuEvent">contextMenuEvent</a>(self,&nbsp;QContextMenuEvent)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-corner"><strong>corner</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-corner">corner</a>(self,&nbsp;Qt.Corner)&nbsp;-&gt;&nbsp;Qt.DockWidgetArea</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-create"><strong>create</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-createPopupMenu"><strong>createPopupMenu</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-createPopupMenu">createPopupMenu</a>(self)&nbsp;-&gt;&nbsp;QMenu</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-customEvent"><strong>customEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-destroy"><strong>destroy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-disconnectNotify"><strong>disconnectNotify</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-dockOptions"><strong>dockOptions</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-dockOptions">dockOptions</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOptions</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-dockWidgetArea"><strong>dockWidgetArea</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-dockWidgetArea">dockWidgetArea</a>(self,&nbsp;QDockWidget)&nbsp;-&gt;&nbsp;Qt.DockWidgetArea</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-documentMode"><strong>documentMode</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-documentMode">documentMode</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-dragEnterEvent"><strong>dragEnterEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-dragLeaveEvent"><strong>dragLeaveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-dragMoveEvent"><strong>dragMoveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-dropEvent"><strong>dropEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-enterEvent"><strong>enterEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-event"><strong>event</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-event">event</a>(self,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-focusInEvent"><strong>focusInEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-focusNextChild"><strong>focusNextChild</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-focusNextPrevChild"><strong>focusNextPrevChild</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-focusOutEvent"><strong>focusOutEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-focusPreviousChild"><strong>focusPreviousChild</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-hideEvent"><strong>hideEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-iconSize"><strong>iconSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-iconSize">iconSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<strong>iconSizeChanged</strong> = &lt;unbound PYQT_SIGNAL iconSizeChanged(QSize)&gt;
+<dl><dt><a name="MessengerApp-initPainter"><strong>initPainter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-inputMethodEvent"><strong>inputMethodEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-insertToolBar"><strong>insertToolBar</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-insertToolBar">insertToolBar</a>(self,&nbsp;QToolBar,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-insertToolBarBreak"><strong>insertToolBarBreak</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-insertToolBarBreak">insertToolBarBreak</a>(self,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isAnimated"><strong>isAnimated</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isAnimated">isAnimated</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isDockNestingEnabled"><strong>isDockNestingEnabled</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isDockNestingEnabled">isDockNestingEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isSeparator"><strong>isSeparator</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isSeparator">isSeparator</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isSignalConnected"><strong>isSignalConnected</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-keyPressEvent"><strong>keyPressEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-keyReleaseEvent"><strong>keyReleaseEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-leaveEvent"><strong>leaveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-menuBar"><strong>menuBar</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-menuBar">menuBar</a>(self)&nbsp;-&gt;&nbsp;QMenuBar</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-menuWidget"><strong>menuWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-menuWidget">menuWidget</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-metric"><strong>metric</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-mouseDoubleClickEvent"><strong>mouseDoubleClickEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-mouseMoveEvent"><strong>mouseMoveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-mousePressEvent"><strong>mousePressEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-mouseReleaseEvent"><strong>mouseReleaseEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-moveEvent"><strong>moveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-nativeEvent"><strong>nativeEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-paintEvent"><strong>paintEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-receivers"><strong>receivers</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-removeDockWidget"><strong>removeDockWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-removeDockWidget">removeDockWidget</a>(self,&nbsp;QDockWidget)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-removeToolBar"><strong>removeToolBar</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-removeToolBar">removeToolBar</a>(self,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-removeToolBarBreak"><strong>removeToolBarBreak</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-removeToolBarBreak">removeToolBarBreak</a>(self,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-resizeDocks"><strong>resizeDocks</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-resizeDocks">resizeDocks</a>(self,&nbsp;Iterable[QDockWidget],&nbsp;Iterable[int],&nbsp;Qt.Orientation)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-resizeEvent"><strong>resizeEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-restoreDockWidget"><strong>restoreDockWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-restoreDockWidget">restoreDockWidget</a>(self,&nbsp;QDockWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-restoreState"><strong>restoreState</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-restoreState">restoreState</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray],&nbsp;version:&nbsp;int&nbsp;=&nbsp;0)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-saveState"><strong>saveState</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-saveState">saveState</a>(self,&nbsp;version:&nbsp;int&nbsp;=&nbsp;0)&nbsp;-&gt;&nbsp;QByteArray</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-sender"><strong>sender</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-senderSignalIndex"><strong>senderSignalIndex</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-setAnimated"><strong>setAnimated</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setAnimated">setAnimated</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setCentralWidget"><strong>setCentralWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setCentralWidget">setCentralWidget</a>(self,&nbsp;QWidget)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setCorner"><strong>setCorner</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setCorner">setCorner</a>(self,&nbsp;Qt.Corner,&nbsp;Qt.DockWidgetArea)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setDockNestingEnabled"><strong>setDockNestingEnabled</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setDockNestingEnabled">setDockNestingEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setDockOptions"><strong>setDockOptions</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setDockOptions">setDockOptions</a>(self,&nbsp;Union[<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOptions,&nbsp;<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOption])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setDocumentMode"><strong>setDocumentMode</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setDocumentMode">setDocumentMode</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setIconSize"><strong>setIconSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setIconSize">setIconSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMenuBar"><strong>setMenuBar</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMenuBar">setMenuBar</a>(self,&nbsp;QMenuBar)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMenuWidget"><strong>setMenuWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMenuWidget">setMenuWidget</a>(self,&nbsp;QWidget)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setStatusBar"><strong>setStatusBar</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setStatusBar">setStatusBar</a>(self,&nbsp;QStatusBar)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setTabPosition"><strong>setTabPosition</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setTabPosition">setTabPosition</a>(self,&nbsp;Union[Qt.DockWidgetAreas,&nbsp;Qt.DockWidgetArea],&nbsp;QTabWidget.TabPosition)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setTabShape"><strong>setTabShape</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setTabShape">setTabShape</a>(self,&nbsp;QTabWidget.TabShape)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setToolButtonStyle"><strong>setToolButtonStyle</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setToolButtonStyle">setToolButtonStyle</a>(self,&nbsp;Qt.ToolButtonStyle)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setUnifiedTitleAndToolBarOnMac"><strong>setUnifiedTitleAndToolBarOnMac</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setUnifiedTitleAndToolBarOnMac">setUnifiedTitleAndToolBarOnMac</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-sharedPainter"><strong>sharedPainter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-showEvent"><strong>showEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-splitDockWidget"><strong>splitDockWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-splitDockWidget">splitDockWidget</a>(self,&nbsp;QDockWidget,&nbsp;QDockWidget,&nbsp;Qt.Orientation)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-statusBar"><strong>statusBar</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-statusBar">statusBar</a>(self)&nbsp;-&gt;&nbsp;QStatusBar</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-tabPosition"><strong>tabPosition</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-tabPosition">tabPosition</a>(self,&nbsp;Qt.DockWidgetArea)&nbsp;-&gt;&nbsp;QTabWidget.TabPosition</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-tabShape"><strong>tabShape</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-tabShape">tabShape</a>(self)&nbsp;-&gt;&nbsp;QTabWidget.TabShape</tt></dd></dl>
+
+<strong>tabifiedDockWidgetActivated</strong> = &lt;unbound PYQT_SIGNAL tabifiedDockWidgetActivated(QDockWidget*)&gt;
+<dl><dt><a name="MessengerApp-tabifiedDockWidgets"><strong>tabifiedDockWidgets</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-tabifiedDockWidgets">tabifiedDockWidgets</a>(self,&nbsp;QDockWidget)&nbsp;-&gt;&nbsp;List[QDockWidget]</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-tabifyDockWidget"><strong>tabifyDockWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-tabifyDockWidget">tabifyDockWidget</a>(self,&nbsp;QDockWidget,&nbsp;QDockWidget)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-tabletEvent"><strong>tabletEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-takeCentralWidget"><strong>takeCentralWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-takeCentralWidget">takeCentralWidget</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-timerEvent"><strong>timerEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-toolBarArea"><strong>toolBarArea</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-toolBarArea">toolBarArea</a>(self,&nbsp;QToolBar)&nbsp;-&gt;&nbsp;Qt.ToolBarArea</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-toolBarBreak"><strong>toolBarBreak</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-toolBarBreak">toolBarBreak</a>(self,&nbsp;QToolBar)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-toolButtonStyle"><strong>toolButtonStyle</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-toolButtonStyle">toolButtonStyle</a>(self)&nbsp;-&gt;&nbsp;Qt.ToolButtonStyle</tt></dd></dl>
+
+<strong>toolButtonStyleChanged</strong> = &lt;unbound PYQT_SIGNAL toolButtonStyleChanged(Qt::ToolButtonStyle)&gt;
+<dl><dt><a name="MessengerApp-unifiedTitleAndToolBarOnMac"><strong>unifiedTitleAndToolBarOnMac</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-unifiedTitleAndToolBarOnMac">unifiedTitleAndToolBarOnMac</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-updateMicroFocus"><strong>updateMicroFocus</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MessengerApp-wheelEvent"><strong>wheelEvent</strong></a>(...)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>:<br>
+<dl><dt><strong>AllowNestedDocks</strong> = 2</dl>
+
+<dl><dt><strong>AllowTabbedDocks</strong> = 4</dl>
+
+<dl><dt><strong>AnimatedDocks</strong> = 1</dl>
+
+<dl><dt><strong>DockOption</strong> = &lt;class 'PyQt5.QtWidgets.QMainWindow.DockOption'&gt;</dl>
+
+<dl><dt><strong>DockOptions</strong> = &lt;class 'PyQt5.QtWidgets.QMainWindow.DockOptions'&gt;<dd><tt><a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.<a href="#MessengerApp-DockOptions">DockOptions</a>()<br>
+<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.<a href="#MessengerApp-DockOptions">DockOptions</a>(Union[<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOptions,&nbsp;<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOption])<br>
+<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.<a href="#MessengerApp-DockOptions">DockOptions</a>(<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOptions)</tt></dl>
+
+<dl><dt><strong>ForceTabbedDocks</strong> = 8</dl>
+
+<dl><dt><strong>GroupedDragging</strong> = 32</dl>
+
+<dl><dt><strong>VerticalTabs</strong> = 16</dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>:<br>
+<dl><dt><a name="MessengerApp-acceptDrops"><strong>acceptDrops</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-acceptDrops">acceptDrops</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-accessibleDescription"><strong>accessibleDescription</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-accessibleDescription">accessibleDescription</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-accessibleName"><strong>accessibleName</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-accessibleName">accessibleName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-actions"><strong>actions</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-actions">actions</a>(self)&nbsp;-&gt;&nbsp;List[QAction]</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-activateWindow"><strong>activateWindow</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-activateWindow">activateWindow</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-addAction"><strong>addAction</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-addAction">addAction</a>(self,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-addActions"><strong>addActions</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-addActions">addActions</a>(self,&nbsp;Iterable[QAction])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-adjustSize"><strong>adjustSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-adjustSize">adjustSize</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-autoFillBackground"><strong>autoFillBackground</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-autoFillBackground">autoFillBackground</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-backgroundRole"><strong>backgroundRole</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-backgroundRole">backgroundRole</a>(self)&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-baseSize"><strong>baseSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-baseSize">baseSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-childAt"><strong>childAt</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-childAt">childAt</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QWidget<br>
+<a href="#MessengerApp-childAt">childAt</a>(self,&nbsp;int,&nbsp;int)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-childrenRect"><strong>childrenRect</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-childrenRect">childrenRect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-childrenRegion"><strong>childrenRegion</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-childrenRegion">childrenRegion</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-clearFocus"><strong>clearFocus</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-clearFocus">clearFocus</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-clearMask"><strong>clearMask</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-clearMask">clearMask</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-close">close</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-contentsMargins"><strong>contentsMargins</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-contentsMargins">contentsMargins</a>(self)&nbsp;-&gt;&nbsp;QMargins</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-contentsRect"><strong>contentsRect</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-contentsRect">contentsRect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-contextMenuPolicy"><strong>contextMenuPolicy</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-contextMenuPolicy">contextMenuPolicy</a>(self)&nbsp;-&gt;&nbsp;Qt.ContextMenuPolicy</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-createWindowContainer"><strong>createWindowContainer</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-createWindowContainer">createWindowContainer</a>(QWindow,&nbsp;parent:&nbsp;QWidget&nbsp;=&nbsp;None,&nbsp;flags:&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType]&nbsp;=&nbsp;0)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-cursor"><strong>cursor</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-cursor">cursor</a>(self)&nbsp;-&gt;&nbsp;QCursor</tt></dd></dl>
+
+<strong>customContextMenuRequested</strong> = &lt;unbound PYQT_SIGNAL customContextMenuRequested(QPoint)&gt;
+<dl><dt><a name="MessengerApp-devType"><strong>devType</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-devType">devType</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-effectiveWinId"><strong>effectiveWinId</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-effectiveWinId">effectiveWinId</a>(self)&nbsp;-&gt;&nbsp;PyQt5.sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-ensurePolished"><strong>ensurePolished</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-ensurePolished">ensurePolished</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-find"><strong>find</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-find">find</a>(PyQt5.sip.voidptr)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-focusPolicy"><strong>focusPolicy</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-focusPolicy">focusPolicy</a>(self)&nbsp;-&gt;&nbsp;Qt.FocusPolicy</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-focusProxy"><strong>focusProxy</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-focusProxy">focusProxy</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-focusWidget"><strong>focusWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-focusWidget">focusWidget</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-font"><strong>font</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-font">font</a>(self)&nbsp;-&gt;&nbsp;QFont</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-fontInfo"><strong>fontInfo</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-fontInfo">fontInfo</a>(self)&nbsp;-&gt;&nbsp;QFontInfo</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-fontMetrics"><strong>fontMetrics</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-fontMetrics">fontMetrics</a>(self)&nbsp;-&gt;&nbsp;QFontMetrics</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-foregroundRole"><strong>foregroundRole</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-foregroundRole">foregroundRole</a>(self)&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-frameGeometry"><strong>frameGeometry</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-frameGeometry">frameGeometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-frameSize"><strong>frameSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-frameSize">frameSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-geometry"><strong>geometry</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-geometry">geometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-getContentsMargins"><strong>getContentsMargins</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-getContentsMargins">getContentsMargins</a>(self)&nbsp;-&gt;&nbsp;Tuple[int,&nbsp;int,&nbsp;int,&nbsp;int]</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-grab"><strong>grab</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-grab">grab</a>(self,&nbsp;rectangle:&nbsp;QRect&nbsp;=&nbsp;QRect(QPoint(0,0),QSize(-1,-1)))&nbsp;-&gt;&nbsp;QPixmap</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-grabGesture"><strong>grabGesture</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-grabGesture">grabGesture</a>(self,&nbsp;Qt.GestureType,&nbsp;flags:&nbsp;Union[Qt.GestureFlags,&nbsp;Qt.GestureFlag]&nbsp;=&nbsp;Qt.GestureFlags())</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-grabKeyboard"><strong>grabKeyboard</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-grabKeyboard">grabKeyboard</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-grabMouse"><strong>grabMouse</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-grabMouse">grabMouse</a>(self)<br>
+<a href="#MessengerApp-grabMouse">grabMouse</a>(self,&nbsp;Union[QCursor,&nbsp;Qt.CursorShape])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-grabShortcut"><strong>grabShortcut</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-grabShortcut">grabShortcut</a>(self,&nbsp;Union[QKeySequence,&nbsp;QKeySequence.StandardKey,&nbsp;str,&nbsp;int],&nbsp;context:&nbsp;Qt.ShortcutContext&nbsp;=&nbsp;Qt.WindowShortcut)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-graphicsEffect"><strong>graphicsEffect</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-graphicsEffect">graphicsEffect</a>(self)&nbsp;-&gt;&nbsp;QGraphicsEffect</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-graphicsProxyWidget"><strong>graphicsProxyWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-graphicsProxyWidget">graphicsProxyWidget</a>(self)&nbsp;-&gt;&nbsp;QGraphicsProxyWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-hasFocus"><strong>hasFocus</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-hasFocus">hasFocus</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-hasHeightForWidth"><strong>hasHeightForWidth</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-hasHeightForWidth">hasHeightForWidth</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-hasMouseTracking"><strong>hasMouseTracking</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-hasMouseTracking">hasMouseTracking</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-hasTabletTracking"><strong>hasTabletTracking</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-hasTabletTracking">hasTabletTracking</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-height"><strong>height</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-height">height</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-heightForWidth"><strong>heightForWidth</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-heightForWidth">heightForWidth</a>(self,&nbsp;int)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-hide"><strong>hide</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-hide">hide</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-inputMethodHints"><strong>inputMethodHints</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-inputMethodHints">inputMethodHints</a>(self)&nbsp;-&gt;&nbsp;Qt.InputMethodHints</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-inputMethodQuery"><strong>inputMethodQuery</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-inputMethodQuery">inputMethodQuery</a>(self,&nbsp;Qt.InputMethodQuery)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-insertAction"><strong>insertAction</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-insertAction">insertAction</a>(self,&nbsp;QAction,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-insertActions"><strong>insertActions</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-insertActions">insertActions</a>(self,&nbsp;QAction,&nbsp;Iterable[QAction])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isActiveWindow"><strong>isActiveWindow</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isActiveWindow">isActiveWindow</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isAncestorOf"><strong>isAncestorOf</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isAncestorOf">isAncestorOf</a>(self,&nbsp;QWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isEnabled"><strong>isEnabled</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isEnabled">isEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isEnabledTo"><strong>isEnabledTo</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isEnabledTo">isEnabledTo</a>(self,&nbsp;QWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isFullScreen"><strong>isFullScreen</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isFullScreen">isFullScreen</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isHidden"><strong>isHidden</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isHidden">isHidden</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isLeftToRight"><strong>isLeftToRight</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isLeftToRight">isLeftToRight</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isMaximized"><strong>isMaximized</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isMaximized">isMaximized</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isMinimized"><strong>isMinimized</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isMinimized">isMinimized</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isModal"><strong>isModal</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isModal">isModal</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isRightToLeft"><strong>isRightToLeft</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isRightToLeft">isRightToLeft</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isVisible"><strong>isVisible</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isVisible">isVisible</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isVisibleTo"><strong>isVisibleTo</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isVisibleTo">isVisibleTo</a>(self,&nbsp;QWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isWindow"><strong>isWindow</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isWindow">isWindow</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isWindowModified"><strong>isWindowModified</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isWindowModified">isWindowModified</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-keyboardGrabber"><strong>keyboardGrabber</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-keyboardGrabber">keyboardGrabber</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-layout"><strong>layout</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-layout">layout</a>(self)&nbsp;-&gt;&nbsp;QLayout</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-layoutDirection"><strong>layoutDirection</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-layoutDirection">layoutDirection</a>(self)&nbsp;-&gt;&nbsp;Qt.LayoutDirection</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-locale"><strong>locale</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-locale">locale</a>(self)&nbsp;-&gt;&nbsp;QLocale</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-lower"><strong>lower</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-lower">lower</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-mapFrom"><strong>mapFrom</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-mapFrom">mapFrom</a>(self,&nbsp;QWidget,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-mapFromGlobal"><strong>mapFromGlobal</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-mapFromGlobal">mapFromGlobal</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-mapFromParent"><strong>mapFromParent</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-mapFromParent">mapFromParent</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-mapTo"><strong>mapTo</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-mapTo">mapTo</a>(self,&nbsp;QWidget,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-mapToGlobal"><strong>mapToGlobal</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-mapToGlobal">mapToGlobal</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-mapToParent"><strong>mapToParent</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-mapToParent">mapToParent</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-mask"><strong>mask</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-mask">mask</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-maximumHeight"><strong>maximumHeight</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-maximumHeight">maximumHeight</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-maximumSize"><strong>maximumSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-maximumSize">maximumSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-maximumWidth"><strong>maximumWidth</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-maximumWidth">maximumWidth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-minimumHeight"><strong>minimumHeight</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-minimumHeight">minimumHeight</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-minimumSize"><strong>minimumSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-minimumSize">minimumSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-minimumSizeHint"><strong>minimumSizeHint</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-minimumSizeHint">minimumSizeHint</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-minimumWidth"><strong>minimumWidth</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-minimumWidth">minimumWidth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-mouseGrabber"><strong>mouseGrabber</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-mouseGrabber">mouseGrabber</a>()&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-move"><strong>move</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-move">move</a>(self,&nbsp;QPoint)<br>
+<a href="#MessengerApp-move">move</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-nativeParentWidget"><strong>nativeParentWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-nativeParentWidget">nativeParentWidget</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-nextInFocusChain"><strong>nextInFocusChain</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-nextInFocusChain">nextInFocusChain</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-normalGeometry"><strong>normalGeometry</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-normalGeometry">normalGeometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-overrideWindowFlags"><strong>overrideWindowFlags</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-overrideWindowFlags">overrideWindowFlags</a>(self,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-overrideWindowState"><strong>overrideWindowState</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-overrideWindowState">overrideWindowState</a>(self,&nbsp;Union[Qt.WindowStates,&nbsp;Qt.WindowState])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-paintEngine"><strong>paintEngine</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-paintEngine">paintEngine</a>(self)&nbsp;-&gt;&nbsp;QPaintEngine</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-palette"><strong>palette</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-palette">palette</a>(self)&nbsp;-&gt;&nbsp;QPalette</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-parentWidget"><strong>parentWidget</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-parentWidget">parentWidget</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-pos"><strong>pos</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-pos">pos</a>(self)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-previousInFocusChain"><strong>previousInFocusChain</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-previousInFocusChain">previousInFocusChain</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-raise_"><strong>raise_</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-raise_">raise_</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-rect"><strong>rect</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-rect">rect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-releaseKeyboard"><strong>releaseKeyboard</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-releaseKeyboard">releaseKeyboard</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-releaseMouse"><strong>releaseMouse</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-releaseMouse">releaseMouse</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-releaseShortcut"><strong>releaseShortcut</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-releaseShortcut">releaseShortcut</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-removeAction"><strong>removeAction</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-removeAction">removeAction</a>(self,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-render"><strong>render</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-render">render</a>(self,&nbsp;QPaintDevice,&nbsp;targetOffset:&nbsp;QPoint&nbsp;=&nbsp;QPoint(),&nbsp;sourceRegion:&nbsp;QRegion&nbsp;=&nbsp;QRegion(),&nbsp;flags:&nbsp;Union[QWidget.RenderFlags,&nbsp;QWidget.RenderFlag]&nbsp;=&nbsp;QWidget.<a href="#MessengerApp-RenderFlags">RenderFlags</a>(QWidget.RenderFlag.DrawWindowBackground|QWidget.RenderFlag.DrawChildren))<br>
+<a href="#MessengerApp-render">render</a>(self,&nbsp;QPainter,&nbsp;targetOffset:&nbsp;QPoint&nbsp;=&nbsp;QPoint(),&nbsp;sourceRegion:&nbsp;QRegion&nbsp;=&nbsp;QRegion(),&nbsp;flags:&nbsp;Union[QWidget.RenderFlags,&nbsp;QWidget.RenderFlag]&nbsp;=&nbsp;QWidget.<a href="#MessengerApp-RenderFlags">RenderFlags</a>(QWidget.RenderFlag.DrawWindowBackground|QWidget.RenderFlag.DrawChildren))</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-repaint"><strong>repaint</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-repaint">repaint</a>(self)<br>
+<a href="#MessengerApp-repaint">repaint</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+<a href="#MessengerApp-repaint">repaint</a>(self,&nbsp;QRect)<br>
+<a href="#MessengerApp-repaint">repaint</a>(self,&nbsp;QRegion)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-resize"><strong>resize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-resize">resize</a>(self,&nbsp;QSize)<br>
+<a href="#MessengerApp-resize">resize</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-restoreGeometry"><strong>restoreGeometry</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-restoreGeometry">restoreGeometry</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray])&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-saveGeometry"><strong>saveGeometry</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-saveGeometry">saveGeometry</a>(self)&nbsp;-&gt;&nbsp;QByteArray</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-screen"><strong>screen</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-screen">screen</a>(self)&nbsp;-&gt;&nbsp;QScreen</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-scroll"><strong>scroll</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-scroll">scroll</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#MessengerApp-scroll">scroll</a>(self,&nbsp;int,&nbsp;int,&nbsp;QRect)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setAcceptDrops"><strong>setAcceptDrops</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setAcceptDrops">setAcceptDrops</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setAccessibleDescription"><strong>setAccessibleDescription</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setAccessibleDescription">setAccessibleDescription</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setAccessibleName"><strong>setAccessibleName</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setAccessibleName">setAccessibleName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setAttribute"><strong>setAttribute</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setAttribute">setAttribute</a>(self,&nbsp;Qt.WidgetAttribute,&nbsp;on:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setAutoFillBackground"><strong>setAutoFillBackground</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setAutoFillBackground">setAutoFillBackground</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setBackgroundRole"><strong>setBackgroundRole</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setBackgroundRole">setBackgroundRole</a>(self,&nbsp;QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setBaseSize"><strong>setBaseSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setBaseSize">setBaseSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#MessengerApp-setBaseSize">setBaseSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setContentsMargins"><strong>setContentsMargins</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setContentsMargins">setContentsMargins</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+<a href="#MessengerApp-setContentsMargins">setContentsMargins</a>(self,&nbsp;QMargins)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setContextMenuPolicy"><strong>setContextMenuPolicy</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setContextMenuPolicy">setContextMenuPolicy</a>(self,&nbsp;Qt.ContextMenuPolicy)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setCursor"><strong>setCursor</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setCursor">setCursor</a>(self,&nbsp;Union[QCursor,&nbsp;Qt.CursorShape])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setDisabled"><strong>setDisabled</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setDisabled">setDisabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setEnabled"><strong>setEnabled</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setEnabled">setEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setFixedHeight"><strong>setFixedHeight</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setFixedHeight">setFixedHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setFixedSize"><strong>setFixedSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setFixedSize">setFixedSize</a>(self,&nbsp;QSize)<br>
+<a href="#MessengerApp-setFixedSize">setFixedSize</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setFixedWidth"><strong>setFixedWidth</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setFixedWidth">setFixedWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setFocus"><strong>setFocus</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setFocus">setFocus</a>(self)<br>
+<a href="#MessengerApp-setFocus">setFocus</a>(self,&nbsp;Qt.FocusReason)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setFocusPolicy"><strong>setFocusPolicy</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setFocusPolicy">setFocusPolicy</a>(self,&nbsp;Qt.FocusPolicy)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setFocusProxy"><strong>setFocusProxy</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setFocusProxy">setFocusProxy</a>(self,&nbsp;QWidget)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setFont"><strong>setFont</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setFont">setFont</a>(self,&nbsp;QFont)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setForegroundRole"><strong>setForegroundRole</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setForegroundRole">setForegroundRole</a>(self,&nbsp;QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setGeometry"><strong>setGeometry</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setGeometry">setGeometry</a>(self,&nbsp;QRect)<br>
+<a href="#MessengerApp-setGeometry">setGeometry</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setGraphicsEffect"><strong>setGraphicsEffect</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setGraphicsEffect">setGraphicsEffect</a>(self,&nbsp;QGraphicsEffect)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setHidden"><strong>setHidden</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setHidden">setHidden</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setInputMethodHints"><strong>setInputMethodHints</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setInputMethodHints">setInputMethodHints</a>(self,&nbsp;Union[Qt.InputMethodHints,&nbsp;Qt.InputMethodHint])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setLayout"><strong>setLayout</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setLayout">setLayout</a>(self,&nbsp;QLayout)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setLayoutDirection"><strong>setLayoutDirection</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setLayoutDirection">setLayoutDirection</a>(self,&nbsp;Qt.LayoutDirection)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setLocale"><strong>setLocale</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setLocale">setLocale</a>(self,&nbsp;QLocale)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMask"><strong>setMask</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMask">setMask</a>(self,&nbsp;QBitmap)<br>
+<a href="#MessengerApp-setMask">setMask</a>(self,&nbsp;QRegion)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMaximumHeight"><strong>setMaximumHeight</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMaximumHeight">setMaximumHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMaximumSize"><strong>setMaximumSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMaximumSize">setMaximumSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#MessengerApp-setMaximumSize">setMaximumSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMaximumWidth"><strong>setMaximumWidth</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMaximumWidth">setMaximumWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMinimumHeight"><strong>setMinimumHeight</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMinimumHeight">setMinimumHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMinimumSize"><strong>setMinimumSize</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMinimumSize">setMinimumSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#MessengerApp-setMinimumSize">setMinimumSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMinimumWidth"><strong>setMinimumWidth</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMinimumWidth">setMinimumWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setMouseTracking"><strong>setMouseTracking</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setMouseTracking">setMouseTracking</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setPalette"><strong>setPalette</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setPalette">setPalette</a>(self,&nbsp;QPalette)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setParent"><strong>setParent</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setParent">setParent</a>(self,&nbsp;QWidget)<br>
+<a href="#MessengerApp-setParent">setParent</a>(self,&nbsp;QWidget,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setShortcutAutoRepeat"><strong>setShortcutAutoRepeat</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setShortcutAutoRepeat">setShortcutAutoRepeat</a>(self,&nbsp;int,&nbsp;enabled:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setShortcutEnabled"><strong>setShortcutEnabled</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setShortcutEnabled">setShortcutEnabled</a>(self,&nbsp;int,&nbsp;enabled:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setSizeIncrement"><strong>setSizeIncrement</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setSizeIncrement">setSizeIncrement</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#MessengerApp-setSizeIncrement">setSizeIncrement</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setSizePolicy"><strong>setSizePolicy</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setSizePolicy">setSizePolicy</a>(self,&nbsp;QSizePolicy)<br>
+<a href="#MessengerApp-setSizePolicy">setSizePolicy</a>(self,&nbsp;QSizePolicy.Policy,&nbsp;QSizePolicy.Policy)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setStatusTip"><strong>setStatusTip</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setStatusTip">setStatusTip</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setStyle"><strong>setStyle</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setStyle">setStyle</a>(self,&nbsp;QStyle)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setStyleSheet"><strong>setStyleSheet</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setStyleSheet">setStyleSheet</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setTabOrder"><strong>setTabOrder</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setTabOrder">setTabOrder</a>(QWidget,&nbsp;QWidget)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setTabletTracking"><strong>setTabletTracking</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setTabletTracking">setTabletTracking</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setToolTip"><strong>setToolTip</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setToolTip">setToolTip</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setToolTipDuration"><strong>setToolTipDuration</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setToolTipDuration">setToolTipDuration</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setUpdatesEnabled"><strong>setUpdatesEnabled</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setUpdatesEnabled">setUpdatesEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setVisible"><strong>setVisible</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setVisible">setVisible</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWhatsThis"><strong>setWhatsThis</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWhatsThis">setWhatsThis</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowFilePath"><strong>setWindowFilePath</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowFilePath">setWindowFilePath</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowFlag"><strong>setWindowFlag</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowFlag">setWindowFlag</a>(self,&nbsp;Qt.WindowType,&nbsp;on:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowFlags"><strong>setWindowFlags</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowFlags">setWindowFlags</a>(self,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowIcon"><strong>setWindowIcon</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowIcon">setWindowIcon</a>(self,&nbsp;QIcon)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowIconText"><strong>setWindowIconText</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowIconText">setWindowIconText</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowModality"><strong>setWindowModality</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowModality">setWindowModality</a>(self,&nbsp;Qt.WindowModality)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowModified"><strong>setWindowModified</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowModified">setWindowModified</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowOpacity"><strong>setWindowOpacity</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowOpacity">setWindowOpacity</a>(self,&nbsp;float)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowRole"><strong>setWindowRole</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowRole">setWindowRole</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowState"><strong>setWindowState</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowState">setWindowState</a>(self,&nbsp;Union[Qt.WindowStates,&nbsp;Qt.WindowState])</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setWindowTitle"><strong>setWindowTitle</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setWindowTitle">setWindowTitle</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-show"><strong>show</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-show">show</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-showFullScreen"><strong>showFullScreen</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-showFullScreen">showFullScreen</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-showMaximized"><strong>showMaximized</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-showMaximized">showMaximized</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-showMinimized"><strong>showMinimized</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-showMinimized">showMinimized</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-showNormal"><strong>showNormal</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-showNormal">showNormal</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-size"><strong>size</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-size">size</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-sizeHint"><strong>sizeHint</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-sizeHint">sizeHint</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-sizeIncrement"><strong>sizeIncrement</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-sizeIncrement">sizeIncrement</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-sizePolicy"><strong>sizePolicy</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-sizePolicy">sizePolicy</a>(self)&nbsp;-&gt;&nbsp;QSizePolicy</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-stackUnder"><strong>stackUnder</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-stackUnder">stackUnder</a>(self,&nbsp;QWidget)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-statusTip"><strong>statusTip</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-statusTip">statusTip</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-style"><strong>style</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-style">style</a>(self)&nbsp;-&gt;&nbsp;QStyle</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-styleSheet"><strong>styleSheet</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-styleSheet">styleSheet</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-testAttribute"><strong>testAttribute</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-testAttribute">testAttribute</a>(self,&nbsp;Qt.WidgetAttribute)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-toolTip"><strong>toolTip</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-toolTip">toolTip</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-toolTipDuration"><strong>toolTipDuration</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-toolTipDuration">toolTipDuration</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-underMouse"><strong>underMouse</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-underMouse">underMouse</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-ungrabGesture"><strong>ungrabGesture</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-ungrabGesture">ungrabGesture</a>(self,&nbsp;Qt.GestureType)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-unsetCursor"><strong>unsetCursor</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-unsetCursor">unsetCursor</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-unsetLayoutDirection"><strong>unsetLayoutDirection</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-unsetLayoutDirection">unsetLayoutDirection</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-unsetLocale"><strong>unsetLocale</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-unsetLocale">unsetLocale</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-update"><strong>update</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-update">update</a>(self)<br>
+<a href="#MessengerApp-update">update</a>(self,&nbsp;QRect)<br>
+<a href="#MessengerApp-update">update</a>(self,&nbsp;QRegion)<br>
+<a href="#MessengerApp-update">update</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-updateGeometry"><strong>updateGeometry</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-updateGeometry">updateGeometry</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-updatesEnabled"><strong>updatesEnabled</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-updatesEnabled">updatesEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-visibleRegion"><strong>visibleRegion</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-visibleRegion">visibleRegion</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-whatsThis"><strong>whatsThis</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-whatsThis">whatsThis</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-width"><strong>width</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-width">width</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-winId"><strong>winId</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-winId">winId</a>(self)&nbsp;-&gt;&nbsp;PyQt5.sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-window"><strong>window</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-window">window</a>(self)&nbsp;-&gt;&nbsp;QWidget</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-windowFilePath"><strong>windowFilePath</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowFilePath">windowFilePath</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-windowFlags"><strong>windowFlags</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowFlags">windowFlags</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowFlags</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-windowHandle"><strong>windowHandle</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowHandle">windowHandle</a>(self)&nbsp;-&gt;&nbsp;QWindow</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-windowIcon"><strong>windowIcon</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowIcon">windowIcon</a>(self)&nbsp;-&gt;&nbsp;QIcon</tt></dd></dl>
+
+<strong>windowIconChanged</strong> = &lt;unbound PYQT_SIGNAL windowIconChanged(QIcon)&gt;
+<dl><dt><a name="MessengerApp-windowIconText"><strong>windowIconText</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowIconText">windowIconText</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>windowIconTextChanged</strong> = &lt;unbound PYQT_SIGNAL windowIconTextChanged(QString)&gt;
+<dl><dt><a name="MessengerApp-windowModality"><strong>windowModality</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowModality">windowModality</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowModality</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-windowOpacity"><strong>windowOpacity</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowOpacity">windowOpacity</a>(self)&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-windowRole"><strong>windowRole</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowRole">windowRole</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-windowState"><strong>windowState</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowState">windowState</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowStates</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-windowTitle"><strong>windowTitle</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowTitle">windowTitle</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>windowTitleChanged</strong> = &lt;unbound PYQT_SIGNAL windowTitleChanged(QString)&gt;
+<dl><dt><a name="MessengerApp-windowType"><strong>windowType</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-windowType">windowType</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowType</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-x"><strong>x</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-x">x</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-y"><strong>y</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-y">y</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>:<br>
+<dl><dt><strong>DrawChildren</strong> = 2</dl>
+
+<dl><dt><strong>DrawWindowBackground</strong> = 1</dl>
+
+<dl><dt><strong>IgnoreMask</strong> = 4</dl>
+
+<dl><dt><strong>RenderFlag</strong> = &lt;class 'PyQt5.QtWidgets.QWidget.RenderFlag'&gt;</dl>
+
+<dl><dt><strong>RenderFlags</strong> = &lt;class 'PyQt5.QtWidgets.QWidget.RenderFlags'&gt;<dd><tt>QWidget.<a href="#MessengerApp-RenderFlags">RenderFlags</a>()<br>
+QWidget.<a href="#MessengerApp-RenderFlags">RenderFlags</a>(Union[QWidget.RenderFlags,&nbsp;QWidget.RenderFlag])<br>
+QWidget.<a href="#MessengerApp-RenderFlags">RenderFlags</a>(QWidget.RenderFlags)</tt></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><a name="MessengerApp-__getattr__"><strong>__getattr__</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-__getattr__">__getattr__</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-blockSignals"><strong>blockSignals</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-blockSignals">blockSignals</a>(self,&nbsp;bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-children"><strong>children</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-children">children</a>(self)&nbsp;-&gt;&nbsp;List[QObject]</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-deleteLater"><strong>deleteLater</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-deleteLater">deleteLater</a>(self)</tt></dd></dl>
+
+<strong>destroyed</strong> = &lt;unbound PYQT_SIGNAL destroyed(QObject*)&gt;
+<dl><dt><a name="MessengerApp-disconnect"><strong>disconnect</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-disconnect">disconnect</a>(QMetaObject.Connection)&nbsp;-&gt;&nbsp;bool<br>
+<a href="#MessengerApp-disconnect">disconnect</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-dumpObjectInfo"><strong>dumpObjectInfo</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-dumpObjectInfo">dumpObjectInfo</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-dumpObjectTree"><strong>dumpObjectTree</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-dumpObjectTree">dumpObjectTree</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-dynamicPropertyNames"><strong>dynamicPropertyNames</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-dynamicPropertyNames">dynamicPropertyNames</a>(self)&nbsp;-&gt;&nbsp;List[QByteArray]</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-eventFilter"><strong>eventFilter</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-eventFilter">eventFilter</a>(self,&nbsp;QObject,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-findChild"><strong>findChild</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-findChild">findChild</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;QObject<br>
+<a href="#MessengerApp-findChild">findChild</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-findChildren"><strong>findChildren</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#MessengerApp-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#MessengerApp-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#MessengerApp-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#MessengerApp-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#MessengerApp-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-inherits"><strong>inherits</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-inherits">inherits</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-installEventFilter"><strong>installEventFilter</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-installEventFilter">installEventFilter</a>(self,&nbsp;QObject)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isWidgetType"><strong>isWidgetType</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isWidgetType">isWidgetType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-isWindowType"><strong>isWindowType</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-isWindowType">isWindowType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-killTimer"><strong>killTimer</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-killTimer">killTimer</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-metaObject"><strong>metaObject</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-metaObject">metaObject</a>(self)&nbsp;-&gt;&nbsp;QMetaObject</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-moveToThread"><strong>moveToThread</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-moveToThread">moveToThread</a>(self,&nbsp;QThread)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-objectName"><strong>objectName</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-objectName">objectName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>objectNameChanged</strong> = &lt;unbound PYQT_SIGNAL objectNameChanged(QString)&gt;
+<dl><dt><a name="MessengerApp-parent"><strong>parent</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-parent">parent</a>(self)&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-property"><strong>property</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-property">property</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-pyqtConfigure"><strong>pyqtConfigure</strong></a>(...)</dt><dd><tt>QObject.<a href="#MessengerApp-pyqtConfigure">pyqtConfigure</a>(...)<br>
+&nbsp;<br>
+Each&nbsp;keyword&nbsp;argument&nbsp;is&nbsp;either&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;Qt&nbsp;property&nbsp;or&nbsp;a&nbsp;Qt&nbsp;signal.<br>
+For&nbsp;properties&nbsp;the&nbsp;property&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;of&nbsp;an<br>
+appropriate&nbsp;type.<br>
+For&nbsp;signals&nbsp;the&nbsp;signal&nbsp;is&nbsp;connected&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;a<br>
+callable.</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-removeEventFilter"><strong>removeEventFilter</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-removeEventFilter">removeEventFilter</a>(self,&nbsp;QObject)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setObjectName"><strong>setObjectName</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setObjectName">setObjectName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-setProperty"><strong>setProperty</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-setProperty">setProperty</a>(self,&nbsp;str,&nbsp;Any)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-signalsBlocked"><strong>signalsBlocked</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-signalsBlocked">signalsBlocked</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-startTimer"><strong>startTimer</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-startTimer">startTimer</a>(self,&nbsp;int,&nbsp;timerType:&nbsp;Qt.TimerType&nbsp;=&nbsp;Qt.CoarseTimer)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-thread"><strong>thread</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-thread">thread</a>(self)&nbsp;-&gt;&nbsp;QThread</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-tr"><strong>tr</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-tr">tr</a>(self,&nbsp;str,&nbsp;disambiguation:&nbsp;str&nbsp;=&nbsp;None,&nbsp;n:&nbsp;int&nbsp;=&nbsp;-1)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>staticMetaObject</strong> = &lt;PyQt5.QtCore.QMetaObject object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>:<br>
+<dl><dt><a name="MessengerApp-colorCount"><strong>colorCount</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-colorCount">colorCount</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-depth"><strong>depth</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-depth">depth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-devicePixelRatio"><strong>devicePixelRatio</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-devicePixelRatio">devicePixelRatio</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-devicePixelRatioF"><strong>devicePixelRatioF</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-devicePixelRatioF">devicePixelRatioF</a>(self)&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-devicePixelRatioFScale"><strong>devicePixelRatioFScale</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-devicePixelRatioFScale">devicePixelRatioFScale</a>()&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-heightMM"><strong>heightMM</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-heightMM">heightMM</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-logicalDpiX"><strong>logicalDpiX</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-logicalDpiX">logicalDpiX</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-logicalDpiY"><strong>logicalDpiY</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-logicalDpiY">logicalDpiY</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-paintingActive"><strong>paintingActive</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-paintingActive">paintingActive</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-physicalDpiX"><strong>physicalDpiX</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-physicalDpiX">physicalDpiX</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-physicalDpiY"><strong>physicalDpiY</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-physicalDpiY">physicalDpiY</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="MessengerApp-widthMM"><strong>widthMM</strong></a>(...)</dt><dd><tt><a href="#MessengerApp-widthMM">widthMM</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>:<br>
+<dl><dt><strong>PaintDeviceMetric</strong> = &lt;class 'PyQt5.QtGui.QPaintDevice.PaintDeviceMetric'&gt;</dl>
+
+<dl><dt><strong>PdmDepth</strong> = 6</dl>
+
+<dl><dt><strong>PdmDevicePixelRatio</strong> = 11</dl>
+
+<dl><dt><strong>PdmDevicePixelRatioScaled</strong> = 12</dl>
+
+<dl><dt><strong>PdmDpiX</strong> = 7</dl>
+
+<dl><dt><strong>PdmDpiY</strong> = 8</dl>
+
+<dl><dt><strong>PdmHeight</strong> = 2</dl>
+
+<dl><dt><strong>PdmHeightMM</strong> = 4</dl>
+
+<dl><dt><strong>PdmNumColors</strong> = 5</dl>
+
+<dl><dt><strong>PdmPhysicalDpiX</strong> = 9</dl>
+
+<dl><dt><strong>PdmPhysicalDpiY</strong> = 10</dl>
+
+<dl><dt><strong>PdmWidth</strong> = 1</dl>
+
+<dl><dt><strong>PdmWidthMM</strong> = 3</dl>
+
+<hr>
+Static methods inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><a name="MessengerApp-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="PyQt5.sip.html#wrappertype">sip.wrappertype</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="client.html#Ui_MainWindow">client.Ui_MainWindow</a>:<br>
+<dl><dt><a name="MessengerApp-retranslateUi"><strong>retranslateUi</strong></a>(self, MainWindow)</dt></dl>
+
+<dl><dt><a name="MessengerApp-setupUi"><strong>setupUi</strong></a>(self, MainWindow)</dt></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
